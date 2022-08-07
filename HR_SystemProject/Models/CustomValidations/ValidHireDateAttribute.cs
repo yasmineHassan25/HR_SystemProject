@@ -13,7 +13,8 @@ namespace HR_SystemProject.Models.CustomValidations
             {
                 return ValidationResult.Success;
             }
-            return ValidationResult("Hiring must be after 6/6/2005");
+            //return ValidationResult("Hiring must be after 6/6/2005");
+            return ValidationResult.Success;
         }
     }
 }
