@@ -15,6 +15,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = F:\Work\HR_SystemProject\HR_SystemProject
 build_property._RazorSourceGeneratorDebug = 
 
+[F:/Work/HR_SystemProject/HR_SystemProject/Views/Employee/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Work/HR_SystemProject/HR_SystemProject/Views/Employee/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcTmV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Work/HR_SystemProject/HR_SystemProject/Views/Employee/ShowAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcU2hvd0FsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Work/HR_SystemProject/HR_SystemProject/Views/Employee/_TableRow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcX1RhYmxlUm93LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/Work/HR_SystemProject/HR_SystemProject/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -25,6 +41,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/Work/HR_SystemProject/HR_SystemProject/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Work/HR_SystemProject/HR_SystemProject/Views/Shared/_DeleteConfirmationModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EZWxldGVDb25maXJtYXRpb25Nb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Work/HR_SystemProject/HR_SystemProject/Views/Shared/_ProcessStateModalPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qcm9jZXNzU3RhdGVNb2RhbFBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Work/HR_SystemProject/HR_SystemProject/Views/Shared/_UpdateConfirmationModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9VcGRhdGVDb25maXJtYXRpb25Nb2RhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/Work/HR_SystemProject/HR_SystemProject/Views/Shared/_ValidationScriptsPartial.cshtml]

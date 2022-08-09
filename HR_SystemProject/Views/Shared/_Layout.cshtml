@@ -70,8 +70,6 @@
                      </li>
                      <li class=" nav-item"><a href="permissions.html"><i class="icon-equalizer"></i><span data-i18n="" class="menu-title">Permissions</span></a>
                      </li>
-                     <li class=" nav-item"><a href="chat.html"><i class="icon-puzzle"></i><span data-i18n="" class="menu-title">Chat</span></a>
-                     </li>
                     
                      <li class=" nav-item"><a href="login.html"><i class="icon-pin"></i><span data-i18n="" class="menu-title">Login Page </span></a>
                       </li>
@@ -157,7 +155,7 @@
                </div>
             </div>
          </nav>
-         <div class="row" style="width:99%;">
+         <div class="row mt-5" style="width:99%;">
             
             <div class="main-panel col-md-12">
                 <div class="main-content">
@@ -388,6 +386,12 @@
         </div>
       </div>
     </div>
+
+    @if(@TempData["message"]!=null)
+    {
+         <partial name="_ProcessStateModalPartial"/>
+    }
+    
          
       <script src="/vendors/js/core/jquery-3.3.1.min.js"></script>
       <script src="/vendors/js/core/popper.min.js"></script>
@@ -402,5 +406,6 @@
       <script src="/js/notification-sidebar.js"></script>
       <script src="/js/customizer.js"></script>
       <script src="/js/dashboard-ecommerce.js"></script>
+      
    </body>
 </html>

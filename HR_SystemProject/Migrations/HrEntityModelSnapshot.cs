@@ -99,7 +99,7 @@ namespace HR_SystemProject.Migrations
                     b.Property<DateTime>("date")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("date")
-                        .HasDefaultValue(new DateTime(2022, 8, 5, 0, 0, 0, 0, DateTimeKind.Unspecified));
+                        .HasDefaultValue(new DateTime(2022, 8, 8, 0, 0, 0, 0, DateTimeKind.Unspecified));
 
                     b.Property<TimeSpan>("checkIn")
                         .HasColumnType("time");
@@ -153,8 +153,9 @@ namespace HR_SystemProject.Migrations
                     b.Property<int>("dept_Id")
                         .HasColumnType("int");
 
-                    b.Property<int>("gender")
-                        .HasColumnType("int");
+                    b.Property<string>("gender")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("hiredate")
                         .HasColumnType("date");
@@ -163,18 +164,20 @@ namespace HR_SystemProject.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("nationalID")
-                        .HasColumnType("int");
+                    b.Property<string>("nationalID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("nationality")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("phone")
-                        .HasColumnType("int");
+                    b.Property<string>("phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("salary")
-                        .HasColumnType("int");
+                    b.Property<decimal>("salary")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("ID");
 
