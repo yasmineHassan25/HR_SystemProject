@@ -12,8 +12,11 @@ builder.Services.AddDbContext<HrEntity>(optionBuilder =>
     optionBuilder.UseSqlServer(builder.Configuration.GetConnectionString("cs"));
 });
 
+
+//Resolve service (dependency injection)..
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+builder.Services.AddScoped<IAttendanceRepository, AttendanceRepository>();
 
 var app = builder.Build();
 

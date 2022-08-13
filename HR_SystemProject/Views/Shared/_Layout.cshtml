@@ -52,16 +52,16 @@
                         <ul class="menu-content">
                            <li><a href="employees.html" class="menu-item"> <i class="icon-bar"></i> Employees Statistics</a>
                            </li>
-                           <li><a href="add_employee.html" class="menu-item">Add Employee</a>
+                           <li><a asp-action="New" asp-controller="Employee" class="menu-item">Add Employee</a>
                            </li>
                         </ul>
                      </li>
-                     <li class=" nav-item"><a href="add_employee.html"><i class="icon-note"></i><span data-i18n="" class="menu-title">Add Employee</span></a>
+                     <li class=" nav-item"><a asp-action="New" asp-controller="Employee"><i class="icon-note"></i><span data-i18n="" class="menu-title">Add Employee</span></a>
                      </li>
                      <li class=" nav-item"><a href="general_settings.html"><i class="icon-pie-chart"></i><span data-i18n="" class="menu-title">
                         General Settings</span></a>
                      </li>
-                     <li class=" nav-item"><a href="attendance_ departure.html"><i class="icon-support"></i><span data-i18n="" class="menu-title">
+                     <li class=" nav-item"><a asp-action="Index" asp-controller="Attendance"><i class="icon-support"></i><span data-i18n="" class="menu-title">
                         Attendance</span></a>
                      </li>
                      <li class=" nav-item"><a href="salary_report.html"><i class="icon-layers"></i><span data-i18n="" class="menu-title">Salary report</span></a>
@@ -392,7 +392,6 @@
          <partial name="_ProcessStateModalPartial"/>
     }
     
-         
       <script src="/vendors/js/core/jquery-3.3.1.min.js"></script>
       <script src="/vendors/js/core/popper.min.js"></script>
       <script src="/vendors/js/core/bootstrap.min.js"></script>
@@ -406,6 +405,8 @@
       <script src="/js/notification-sidebar.js"></script>
       <script src="/js/customizer.js"></script>
       <script src="/js/dashboard-ecommerce.js"></script>
-      
+    
+      @RenderSection("scripts", required: false);
+
    </body>
 </html>

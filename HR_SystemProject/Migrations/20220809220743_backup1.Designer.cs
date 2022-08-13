@@ -4,6 +4,7 @@ using HR_SystemProject.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HR_SystemProject.Migrations
 {
     [DbContext(typeof(HrEntity))]
-    partial class HrEntityModelSnapshot : ModelSnapshot
+    [Migration("20220809220743_backup1")]
+    partial class backup1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -99,10 +101,7 @@ namespace HR_SystemProject.Migrations
                     b.Property<DateTime>("date")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("date")
-                        .HasDefaultValue(new DateTime(2022, 8, 12, 0, 0, 0, 0, DateTimeKind.Unspecified));
-
-                    b.Property<bool?>("IsDeleted")
-                        .HasColumnType("bit");
+                        .HasDefaultValue(new DateTime(2022, 8, 10, 0, 0, 0, 0, DateTimeKind.Unspecified));
 
                     b.Property<TimeSpan>("checkIn")
                         .HasColumnType("time");
