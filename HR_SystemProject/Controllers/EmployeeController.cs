@@ -1,6 +1,7 @@
 ﻿using HR_SystemProject.Models;
 using HR_SystemProject.Repositories;
 using HR_SystemProject.ViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HR_SystemProject.Controllers
@@ -14,11 +15,13 @@ namespace HR_SystemProject.Controllers
             EmployeeRepo = EmpRepo;
             DepartmentRepo = DeptRepo;
         }
+        [Authorize("Permissions.EmployeeController.ShowAll")]
         public IActionResult ShowAll()
         {
             List<Employee> employees = EmployeeRepo.GetAll();
             return View(employees);
         }
+        [Authorize("Permissions.EmployeeController.New")]
         public IActionResult New()
         {
             EmployeeViewModel employeeViewModel = new EmployeeViewModel();
@@ -55,6 +58,7 @@ namespace HR_SystemProject.Controllers
             }
 
         }
+        [Authorize("Permissions.EmployeeController.Edit")]
         public IActionResult Edit(int id)
         { 
             Employee employee = EmployeeRepo.GetByID(id);
@@ -93,6 +97,7 @@ namespace HR_SystemProject.Controllers
                 return View("Edit", editedEmployee);
             }
         }
+        [Authorize("Permissions.EmployeeController.Delete")]
         public IActionResult Delete(int id)
         {
             EmployeeRepo.Delete(id);

@@ -1,10 +1,12 @@
 ﻿@using HR_SystemProject.ViewModel
+@using Microsoft.AspNetCore.Authorization
+
+@inject IAuthorizationService AuthorizationService
 @model EmployeeViewModel
 @{
     ViewData["Title"] = "New Employee";
     SelectList DeptList = new SelectList(Model.Departments, "ID", "Name");
 }
-
 <h1 class="row mb-5">Add New Employee</h1>
 
 <form class="row g-3" method="post" asp-controller="Employee" asp-action="Save" type="text" id="addEmployee">

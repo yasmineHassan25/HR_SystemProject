@@ -404,3 +404,5 @@ F:\GProject_iti\Attendance_Task\HR_SystemProject\HR_SystemProject\obj\Debug\net6
 F:\GProject_iti\Attendance_Task\HR_SystemProject\HR_SystemProject\obj\Debug\net6.0\HR_SystemProject.genruntimeconfig.cache
 F:\GProject_iti\Attendance_Task\HR_SystemProject\HR_SystemProject\obj\Debug\net6.0\ref\HR_SystemProject.dll
 >>>>>>> 2b8b33f8322ed18faaeb66e3e05cb435ec8d147c
+F:\Work\HR_SystemProject\HR_SystemProject\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+F:\Work\HR_SystemProject\HR_SystemProject\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll

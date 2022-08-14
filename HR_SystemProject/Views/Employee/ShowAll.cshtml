@@ -1,4 +1,6 @@
-﻿@model List<Employee>
+﻿@using Microsoft.AspNetCore.Authorization
+@model List<Employee>
+@inject IAuthorizationService AuthorizationService
 @{
     ViewData["Title"] = "ShowAll";
 }

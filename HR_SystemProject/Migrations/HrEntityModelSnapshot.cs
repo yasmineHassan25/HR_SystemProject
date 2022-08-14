@@ -17,7 +17,7 @@ namespace HR_SystemProject.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.7")
+                .HasAnnotation("ProductVersion", "6.0.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -99,7 +99,7 @@ namespace HR_SystemProject.Migrations
                     b.Property<DateTime>("date")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("date")
-                        .HasDefaultValue(new DateTime(2022, 8, 8, 0, 0, 0, 0, DateTimeKind.Unspecified));
+                        .HasDefaultValue(new DateTime(2022, 8, 14, 0, 0, 0, 0, DateTimeKind.Unspecified));
 
                     b.Property<TimeSpan>("checkIn")
                         .HasColumnType("time");
@@ -184,6 +184,31 @@ namespace HR_SystemProject.Migrations
                     b.HasIndex("dept_Id");
 
                     b.ToTable("Employee");
+                });
+
+            modelBuilder.Entity("HR_SystemProject.Models.GeneralSettings", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
+
+                    b.Property<int>("Bouns")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Discount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("vacation1")
+                        .HasColumnType("int");
+
+                    b.Property<int>("vacation2")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("GeneralSetting");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

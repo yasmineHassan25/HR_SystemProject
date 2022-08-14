@@ -1,5 +1,6 @@
 ﻿@using HR_SystemProject.ViewModel
-
+@using Microsoft.AspNetCore.Authorization
+@inject IAuthorizationService AuthorizationService
 @model EmployeeViewModel
 @{
     ViewData["Title"] = "Edit";

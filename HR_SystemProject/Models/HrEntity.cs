@@ -14,6 +14,7 @@ namespace HR_SystemProject.Models
         public virtual DbSet<Employee> Employee { get; set; }
         public virtual DbSet<Department> Department { get; set; }
         public virtual DbSet<Attendence> Attendence { get; set; }
+        public virtual DbSet<GeneralSettings> GeneralSetting { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
