@@ -4,6 +4,7 @@ using HR_SystemProject.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,13 +12,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HR_SystemProject.Migrations
 {
     [DbContext(typeof(HrEntity))]
-    partial class HrEntityModelSnapshot : ModelSnapshot
+    [Migration("20220809220743_backup1")]
+    partial class backup1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.8")
+                .HasAnnotation("ProductVersion", "6.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -99,14 +101,7 @@ namespace HR_SystemProject.Migrations
                     b.Property<DateTime>("date")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("date")
-<<<<<<< HEAD
-                        .HasDefaultValue(new DateTime(2022, 8, 14, 0, 0, 0, 0, DateTimeKind.Unspecified));
-=======
-                        .HasDefaultValue(new DateTime(2022, 8, 12, 0, 0, 0, 0, DateTimeKind.Unspecified));
-
-                    b.Property<bool?>("IsDeleted")
-                        .HasColumnType("bit");
->>>>>>> 91f3e7275dc3cfc9e090fdf87ab3eb1a31d24494
+                        .HasDefaultValue(new DateTime(2022, 8, 10, 0, 0, 0, 0, DateTimeKind.Unspecified));
 
                     b.Property<TimeSpan>("checkIn")
                         .HasColumnType("time");
@@ -191,31 +186,6 @@ namespace HR_SystemProject.Migrations
                     b.HasIndex("dept_Id");
 
                     b.ToTable("Employee");
-                });
-
-            modelBuilder.Entity("HR_SystemProject.Models.GeneralSettings", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
-
-                    b.Property<int>("Bouns")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Discount")
-                        .HasColumnType("int");
-
-                    b.Property<int>("vacation1")
-                        .HasColumnType("int");
-
-                    b.Property<int>("vacation2")
-                        .HasColumnType("int");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("GeneralSetting");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

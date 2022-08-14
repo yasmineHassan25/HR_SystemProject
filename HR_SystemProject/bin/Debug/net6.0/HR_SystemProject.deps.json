@@ -8,10 +8,16 @@
     ".NETCoreApp,Version=v6.0": {
       "HR_SystemProject/1.0.0": {
         "dependencies": {
+<<<<<<< HEAD
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.8",
           "Microsoft.AspNetCore.Identity.UI": "6.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.8",
+=======
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.7",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.7",
+          "Microsoft.EntityFrameworkCore.Tools": "6.0.7",
+>>>>>>> 91f3e7275dc3cfc9e090fdf87ab3eb1a31d24494
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.8",
           "Swashbuckle.AspNetCore": "6.3.0"
         },

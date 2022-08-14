@@ -19,6 +19,7 @@ builder.Services.AddDbContext<HrEntity>(optionBuilder =>
     optionBuilder.UseSqlServer(builder.Configuration.GetConnectionString("cs"));
 });
 
+<<<<<<< HEAD
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<HrEntity>();
 
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
@@ -30,6 +31,13 @@ builder.Services.Configure<SecurityStampValidatorOptions>(options =>
     options.ValidationInterval = TimeSpan.Zero;
 });
 
+=======
+
+//Resolve service (dependency injection)..
+builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+builder.Services.AddScoped<IAttendanceRepository, AttendanceRepository>();
+>>>>>>> 91f3e7275dc3cfc9e090fdf87ab3eb1a31d24494
 
 var app = builder.Build();
 

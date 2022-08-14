@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Work\\HR_SystemProject\\HR_SystemProject\\HR_SystemProject.csproj": {}
+    "F:\\GProject_iti\\test\\HR_SystemProject\\HR_SystemProject\\HR_SystemProject.csproj": {}
   },
   "projects": {
-    "F:\\Work\\HR_SystemProject\\HR_SystemProject\\HR_SystemProject.csproj": {
+    "F:\\GProject_iti\\test\\HR_SystemProject\\HR_SystemProject\\HR_SystemProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Work\\HR_SystemProject\\HR_SystemProject\\HR_SystemProject.csproj",
+        "projectUniqueName": "F:\\GProject_iti\\test\\HR_SystemProject\\HR_SystemProject\\HR_SystemProject.csproj",
         "projectName": "HR_SystemProject",
-        "projectPath": "F:\\Work\\HR_SystemProject\\HR_SystemProject\\HR_SystemProject.csproj",
-        "packagesPath": "C:\\Users\\MH\\.nuget\\packages\\",
-        "outputPath": "F:\\Work\\HR_SystemProject\\HR_SystemProject\\obj\\",
+        "projectPath": "F:\\GProject_iti\\test\\HR_SystemProject\\HR_SystemProject\\HR_SystemProject.csproj",
+        "packagesPath": "C:\\Users\\Yasoo\\.nuget\\packages\\",
+        "outputPath": "F:\\GProject_iti\\test\\HR_SystemProject\\HR_SystemProject\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\MH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yasoo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
